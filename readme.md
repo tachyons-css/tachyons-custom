@@ -1,28 +1,174 @@
-# TACHYONS
+# TACHYONS CUSTOM
 
 Functional css for humans.
 
 Quickly build and design new UI without writing css.
 
-## Principles
+This is a fork of [Tachyons](https://github.com/tachyons-css/tachyons) with values being 
+configurable in a single variables file. More information about Tachyons can be found at http://tachyons.io
 
-* Everything should be 100% responsive
-* Everything should be readable on any device
-* Everything should be as performant as possible
-* Designing in the browser should be easy
-* It should be easy to change any interface or part of an interface without breaking any existing interfaces
-* Doing one thing extremely well promotes reusability and reduces repetition
-* css is global. HTML is not. Send the smallest amount of code to the user as possible.
+##### src/_variables.css
+```
+/*
 
-## Features
+    VARIABLES   
 
-* Mobile-first css
-* Single-purpose class structure
-* Optimized for maximum gzip compression
-* ~13kB when minified and gzipped
-* Usable across projects
-* Infinitely nestable responsive grid system
-* Built with Postcss
+*/
+
+@custom-media --breakpoint-not-small screen and (min-width: 30em);
+@custom-media --breakpoint-medium screen and (min-width: 30em) and (max-width: 60em);
+@custom-media --breakpoint-large screen and (min-width: 60em);
+
+:root {
+
+  --sans-serif: -apple-system, BlinkMacSystemFont, 
+                'avenir next', avenir, 
+                helvetica, 'helvetica neue', 
+                ubuntu, 
+                roboto, 
+                noto, 
+                'segoe ui', 
+                arial, 
+                sans-serif; 
+  --serif: georgia, serif;  
+  --code: consolas, monaco, monospace; 
+
+  --font-size-headline: 6rem;
+  --font-size-subheadline: 5rem;
+  --font-size-1: 3rem;
+  --font-size-2: 2.25rem;
+  --font-size-3: 1.5rem;
+  --font-size-4: 1.25rem;
+  --font-size-5: 1rem;
+  --font-size-6: .875rem;
+
+  --letter-spacing-tight:-.05em;
+  --letter-spacing-1:.1em;
+  --letter-spacing-2:.25em;
+
+  --line-height-solid: 1;
+  --line-height-title: 1.25;
+  --line-height-copy: 1.5;
+
+  --spacing-none: 0;
+  --spacing-extra-small: .25rem;
+  --spacing-small: .5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+  --spacing-extra-large: 4rem;
+  --spacing-extra-extra-large: 8rem;
+  --spacing-extra-extra-extra-large: 16rem;
+
+  --height-1: 1rem;
+  --height-2: 2rem;
+  --height-3: 4rem;
+  --height-4: 8rem;
+  --height-5: 16rem;
+
+  --width-1: 1rem;
+  --width-2: 2rem;
+  --width-3: 4rem;
+  --width-4: 8rem;
+  --width-5: 16rem;
+
+  --max-width-1: 1rem;
+  --max-width-2: 2rem;
+  --max-width-3: 4rem;
+  --max-width-4: 8rem;
+  --max-width-5: 16rem;
+  --max-width-6: 32rem;
+  --max-width-7: 48rem;
+  --max-width-8: 64rem;
+  --max-width-9: 96rem;
+
+  --border-radius-none: 0;
+  --border-radius-1: .125rem;
+  --border-radius-2: .25rem;
+  --border-radius-3: .5rem;
+  --border-radius-4: 1rem;
+  --border-radius-circle: 100%;
+  --border-radius-pill: 9999px;
+
+  --border-width-none: 0;
+  --border-width-1: .125rem;
+  --border-width-2: .25rem;
+  --border-width-3: .5rem;
+  --border-width-4: 1rem;
+  --border-width-5: 2rem;
+
+  --box-shadow-1: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ); 
+  --box-shadow-2: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); 
+  --box-shadow-3: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ); 
+  --box-shadow-4: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); 
+  --box-shadow-5: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ); 
+
+  --black: #000;
+  --near-black: #111;
+  --dark-gray:#333;
+  --mid-gray:#555;
+  --gray: #777;
+  --silver: #999;
+  --light-silver: #aaa;
+  --moon-gray: #ccc;
+  --light-gray: #eee;
+  --near-white: #f4f4f4;
+  --white: #fff;
+
+  --transparent:transparent;
+
+ --black-90: rgba(0,0,0,.9);
+ --black-80: rgba(0,0,0,.8);
+ --black-70: rgba(0,0,0,.7);
+ --black-60: rgba(0,0,0,.6);
+ --black-50: rgba(0,0,0,.5);
+ --black-40: rgba(0,0,0,.4);
+ --black-30: rgba(0,0,0,.3);
+ --black-20: rgba(0,0,0,.2);
+ --black-10: rgba(0,0,0,.1);
+ --black-05: rgba(0,0,0,.05);
+ --black-025: rgba(0,0,0,.025);
+ --black-0125: rgba(0,0,0,.0125);
+
+ --white-90: rgba(255,255,255,.9);
+ --white-80: rgba(255,255,255,.8);
+ --white-70: rgba(255,255,255,.7);
+ --white-60: rgba(255,255,255,.6);
+ --white-50: rgba(255,255,255,.5);
+ --white-40: rgba(255,255,255,.4);
+ --white-30: rgba(255,255,255,.3);
+ --white-20: rgba(255,255,255,.2);
+ --white-10: rgba(255,255,255,.1);
+ --white-05: rgba(255,255,255,.05);
+ --white-025: rgba(255,255,255,.025);
+ --white-0125: rgba(255,255,255,.0125);
+
+  --dark-red:  #e7040f;
+  --red:  #ff4136;
+  --light-red:  #ff725c;
+  --orange:  #ff6300;
+  --gold:  #ffb700;
+  --yellow:  #ffd700;
+  --light-yellow:  #fbf1a9;
+  --purple:  #5e2ca5;
+  --light-purple:  #a463f2;
+  --dark-pink:  #d5008f;
+  --hot-pink: #ff41b4;
+  --pink:  #ff80cc;
+  --light-pink:  #ffa3d7;
+  --dark-green:  #137752;
+  --green:  #19a974;
+  --light-green:  #9eebcf;
+  --navy:  #001b44;
+  --dark-blue:  #00449e;
+  --blue:  #357edd;
+  --light-blue:  #96ccff;
+  --lightest-blue:  #cdecff;
+  --washed-blue:  #f6fffe;
+  --washed-green:  #e8fdf5;
+  --washed-yellow:  #fffceb;
+  --washed-red:  #ffdfdf;
+}
+```
 
 ## Getting started
 
@@ -34,9 +180,9 @@ The modules are generally pretty small and thus easy to read and grock if you're
 The quickest and easiest way to start using tachyons is to include a reference
 to the minified file in the head of your html file.
 
-Currently the latest version is 4.5.2
+Currently the latest version is 4.5.3
 ```html
-<link rel="stylesheet" href="https://unpkg.com/tachyons@4.5.2/css/tachyons.min.css">
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.5.3/css/tachyons.min.css">
 ```
 
 You can always grab the latest version with
@@ -49,29 +195,12 @@ You can always grab the latest version with
 Clone the repo from github and install dependencies through npm.
 
 ```
-git clone https://github.com/tachyons-css/tachyons.git
+git clone https://github.com/tachyons-css/tachyons-custom.git
 cd tachyons
 npm install
 ```
 
 #### Build
-
-##### First time
-
-Tachyons is available as a series of small self contained css modules. They aren't dependent on eachother but
-are designed to play well together. But tachyons is also just css. And you should feel free to edit css
-that is in your project. The first time you build tachyons all of the css gets installed via npm, but the modules
-then get copied over to your local src directory and then the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-uses a series of postcss plugins to compile the source down to vanilla css.
-
-##### Updating
-
-If you want to update a tachyons partial, install the desired module version via npm and run the build command again. Note
-this will copy over all source files, so if you've modified src/ your changes might will be overwritten but you can use version control (like git!) to undo these changes.
-
-```npm run build```
-
-#### Dev
 
 If you want to just use src as a jumping off point and edit all the code yourself, you can compile all of your wonderful changes by running
 
@@ -97,61 +226,6 @@ Also please read our [code of conduct](https://github.com/tachyons-css/tachyons/
 
 ## Websites that Use Tachyons
 (if you have a project that uses Tachyons feel free to make a PR to add it to this list)
-
-* https://coralproject.net
-* https://goldenstaterecord.com
-* https://segment.com
-* https://voteplz.com
-* http://bluebottlecoffee.com
-* http://topher.design
-* http://iheanyi.com/
-* http://johnotander.com
-* https://vimgifs.com
-* http://aboutlife.com
-* http://joinoneroom.com
-* http://cyclelove.cc
-* http://jon.gold/txt
-* http://rene.jon.gold
-* https://tinychime.github.io/jekyons/
-* http://mrmrs.io/up
-* http://prnt.cc
-* http://spenhar.com
-* http://randoma11y.com
-* http://www.csspurge.com
-* http://clrs.cc
-* https://cljsjs.github.io
-* http://mrmrs.io/gradients
-* https://www.getnoodl.es
-* https://natwelch.com
-* http://mrmrs.io/profile/
-* http://mn-ml.cc
-* http://pesticide.io
-* http://mrmrs.io/btns/
-* http://zachhurd.com
-* http://mrmrs.cc
-* http://gfffs.com
-* http://mrmrs.io/beats/
-* http://mrmrs.io/writing
-* http://fade.pics
-* https://wordpress.org/themes/vanilla-milkshake/
-* http://comics.hongkonggong.com/
-* https://accessmyinfo.hk/#/
-* https://accessmyinfo.org/#/
-* http://rene.jon.gold
-* http://randoma11y.com
-* http://designbytyping.com
-* http://colepeters.com
-* https://atmin.github.io/funponent/
-* http://blog.colepeters.com
-* http://filipaonunes.com
-* https://vakra.band
-* http://tylernford.com
-* https://adventuretron.org
-
-And of course...
-* http://tachyons.io
-
-
 
 ## Help
 
