@@ -23,10 +23,10 @@
   "devDependencies": {
     "copy-files": "^0.1.0",
     "immutable-css-cli": "^1.1.1",
-    "normalize.css": "^4.2.0",
-    "tachyons-cli": "^1.0.8",
+    "normalize.css": "^5.0.0",
+    "tachyons-cli": "^1.0.9",
     "tachyons-modules": "^1.1.8",
-    "watch": "^0.19.2"
+    "watch": "^1.0.1"
   },
   "contributors": [
     {
