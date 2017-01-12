@@ -196,7 +196,7 @@ Clone the repo from github and install dependencies through npm.
 
 ```
 git clone https://github.com/tachyons-css/tachyons-custom.git
-cd tachyons
+cd tachyons-custom
 npm install
 ```
 
