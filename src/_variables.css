@@ -1,6 +1,6 @@
 /*
 
-    VARIABLES   
+    VARIABLES
 
 */
 
@@ -10,17 +10,17 @@
 
 :root {
 
-  --sans-serif: -apple-system, BlinkMacSystemFont, 
-                'avenir next', avenir, 
-                helvetica, 'helvetica neue', 
-                ubuntu, 
-                roboto, 
-                noto, 
-                'segoe ui', 
-                arial, 
-                sans-serif; 
-  --serif: georgia, serif;  
-  --code: consolas, monaco, monospace; 
+  --sans-serif: -apple-system, BlinkMacSystemFont,
+                'avenir next', avenir,
+                helvetica, 'helvetica neue',
+                ubuntu,
+                roboto,
+                noto,
+                'segoe ui',
+                arial,
+                sans-serif;
+  --serif: georgia, serif;
+  --code: consolas, monaco, monospace;
 
   --font-size-headline: 6rem;
   --font-size-subheadline: 5rem;
@@ -38,6 +38,10 @@
   --line-height-solid: 1;
   --line-height-title: 1.25;
   --line-height-copy: 1.5;
+
+  --measure: 30em;
+  --measure-narrow: 20em;
+  --measure-wide: 34em;
 
   --spacing-none: 0;
   --spacing-extra-small: .25rem;
@@ -85,11 +89,11 @@
   --border-width-4: 1rem;
   --border-width-5: 2rem;
 
-  --box-shadow-1: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ); 
-  --box-shadow-2: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); 
-  --box-shadow-3: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ); 
-  --box-shadow-4: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); 
-  --box-shadow-5: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ); 
+  --box-shadow-1: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 );
+  --box-shadow-2: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 );
+  --box-shadow-3: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 );
+  --box-shadow-4: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 );
+  --box-shadow-5: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 );
 
   --black: #000;
   --near-black: #111;
