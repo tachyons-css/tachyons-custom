@@ -46,6 +46,7 @@
 .f4 { font-size: var(--font-size-4); }
 .f5 { font-size: var(--font-size-5); }
 .f6 { font-size: var(--font-size-6); }
+.f7 { font-size: var(--font-size-7); }
 
 @media (--breakpoint-not-small){
   .f-6-ns,
@@ -58,6 +59,7 @@
   .f4-ns { font-size: var(--font-size-4); }
   .f5-ns { font-size: var(--font-size-5); }
   .f6-ns { font-size: var(--font-size-6); }
+  .f7-ns { font-size: var(--font-size-7); }
 }
 
 @media (--breakpoint-medium) {
@@ -71,6 +73,7 @@
   .f4-m { font-size: var(--font-size-4); }
   .f5-m { font-size: var(--font-size-5); }
   .f6-m { font-size: var(--font-size-6); }
+  .f7-m { font-size: var(--font-size-7); }
 }
 
 @media (--breakpoint-large) {
@@ -88,4 +91,5 @@
   .f4-l { font-size: var(--font-size-4); }
   .f5-l { font-size: var(--font-size-5); }
   .f6-l { font-size: var(--font-size-6); }
+  .f7-l { font-size: var(--font-size-7); }
 }

@@ -1,6 +1,6 @@
 {
   "name": "tachyons-custom",
-  "version": "4.6.0",
+  "version": "4.8.1",
   "description": "Functional CSS for humans",
   "author": "mrmrs",
   "style": "css/tachyons.min.css",
@@ -23,10 +23,10 @@
   "devDependencies": {
     "copy-files": "^0.1.0",
     "immutable-css-cli": "^1.1.1",
-    "normalize.css": "^5.0.0",
-    "tachyons-cli": "^1.0.9",
-    "tachyons-modules": "^1.1.8",
-    "watch": "^1.0.1"
+    "normalize.css": "^7.0.0",
+    "tachyons-cli": "^1.0.11",
+    "tachyons-modules": "^1.1.10",
+    "watch": "^1.0.2"
   },
   "contributors": [
     {
