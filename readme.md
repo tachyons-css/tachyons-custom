@@ -41,7 +41,7 @@ configurable in a single variables file. More information about Tachyons can be 
   --font-size-4: 1.25rem;
   --font-size-5: 1rem;
   --font-size-6: .875rem;
-  --font-size-6: .75rem;
+  --font-size-7: .75rem;
 
   --letter-spacing-tight:-.05em;
   --letter-spacing-1:.1em;
