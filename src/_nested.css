@@ -35,7 +35,7 @@
 }
 
 .nested-copy-seperator p+p {
-  margin-top: var(--line-height-copy)em;
+  margin-top: var(--spacing-copy-separator);
 }
 
 .nested-img img {

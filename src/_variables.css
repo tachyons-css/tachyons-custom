@@ -10,15 +10,7 @@
 
 :root {
 
-  --sans-serif: -apple-system, BlinkMacSystemFont,
-                'avenir next', avenir,
-                helvetica, 'helvetica neue',
-                ubuntu,
-                roboto,
-                noto,
-                'segoe ui',
-                arial,
-                sans-serif;
+  --sans-serif: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
   --serif: georgia, serif;
   --code: consolas, monaco, monospace;
 
@@ -52,6 +44,7 @@
   --spacing-extra-large: 4rem;
   --spacing-extra-extra-large: 8rem;
   --spacing-extra-extra-extra-large: 16rem;
+  --spacing-copy-separator: 1.5em;
 
   --height-1: 1rem;
   --height-2: 2rem;
