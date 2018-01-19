@@ -18,7 +18,7 @@
 .nested-headline-line-height h4,
 .nested-headline-line-height h5,
 .nested-headline-line-height h6 {
-  line-height: var(--font-size-4);
+  line-height: var(--line-height-title);
 }
 
 .nested-list-reset ul,
