@@ -1,5 +1,7 @@
 # TACHYONS CUSTOM
 
+You can find a generator for these themes at https://components.ai/tachyons-theme
+
 Functional css for humans.
 
 Quickly build and design new UI without writing css.
