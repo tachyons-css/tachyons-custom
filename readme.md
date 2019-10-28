@@ -228,7 +228,11 @@ any changes you make to the css in this repo would get overridden.
 Also please read our [code of conduct](https://github.com/tachyons-css/tachyons/blob/master/code-of-conduct.md) for contributors.
 
 ## Websites that Use Tachyons
-(if you have a project that uses Tachyons feel free to make a PR to add it to this list)
+If you have a project or site that uses Tachyons feel free to make a PR to the (main repo) to add it to the list.
+
+https://github.com/tachyons-css/tachyons/blob/master/sites.md
+
+
 
 ## Help
 
