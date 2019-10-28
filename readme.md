@@ -22,18 +22,9 @@ configurable in a single variables file. More information about Tachyons can be 
 @custom-media --breakpoint-large screen and (min-width: 60em);
 
 :root {
-
-  --sans-serif: -apple-system, BlinkMacSystemFont,
-                'avenir next', avenir,
-                helvetica, 'helvetica neue',
-                ubuntu,
-                roboto,
-                noto,
-                'segoe ui',
-                arial,
-                sans-serif;
-  --serif: georgia, serif;  
-  --code: consolas, monaco, monospace;
+  --sans-serif: -apple-system, BlinkMacSystemFont, -system-ui, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+  --serif: athelas, serif;
+  --monospace: SFMono, consolas, monaco, monospace;
 
   --font-size-headline: 6rem;
   --font-size-subheadline: 5rem;
@@ -42,8 +33,12 @@ configurable in a single variables file. More information about Tachyons can be 
   --font-size-3: 1.5rem;
   --font-size-4: 1.25rem;
   --font-size-5: 1rem;
-  --font-size-6: .875rem;
-  --font-size-7: .75rem;
+  --font-size-6: 0.875rem;
+  --font-size-7: 0.75rem;
+
+  --measure: 30em;
+  --measure-narrow: 20em;
+  --measure-wide: 34em;
 
   --letter-spacing-tight:-.05em;
   --letter-spacing-1:.1em;
@@ -53,21 +48,32 @@ configurable in a single variables file. More information about Tachyons can be 
   --line-height-title: 1.25;
   --line-height-copy: 1.5;
 
-  --spacing-none: 0;
-  --spacing-extra-small: .25rem;
-  --spacing-small: .5rem;
+  --spacing-extra-small: 0.25rem;
+  --spacing-small: 0.5rem;
   --spacing-medium: 1rem;
   --spacing-large: 2rem;
   --spacing-extra-large: 4rem;
   --spacing-extra-extra-large: 8rem;
   --spacing-extra-extra-extra-large: 16rem;
 
+  --border-radius-1: 0.125rem;
+  --border-radius-2: 0.25rem;
+  --border-radius-3: 0.5rem;
+  --border-radius-4: 1rem;
+  --border-radius-circle: 100%;
+  --border-radius-pill: 9999px;
+
+  --box-shadow-1: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 );
+  --box-shadow-2: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 );
+  --box-shadow-3: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 );
+  --box-shadow-4: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 );
+  --box-shadow-5: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 );
+
   --height-1: 1rem;
   --height-2: 2rem;
   --height-3: 4rem;
   --height-4: 8rem;
   --height-5: 16rem;
-
   --width-1: 1rem;
   --width-2: 2rem;
   --width-3: 4rem;
@@ -84,92 +90,86 @@ configurable in a single variables file. More information about Tachyons can be 
   --max-width-8: 64rem;
   --max-width-9: 96rem;
 
-  --border-radius-none: 0;
-  --border-radius-1: .125rem;
-  --border-radius-2: .25rem;
-  --border-radius-3: .5rem;
-  --border-radius-4: 1rem;
-  --border-radius-circle: 100%;
-  --border-radius-pill: 9999px;
-
-  --border-width-none: 0;
-  --border-width-1: .125rem;
-  --border-width-2: .25rem;
-  --border-width-3: .5rem;
-  --border-width-4: 1rem;
-  --border-width-5: 2rem;
-
-  --box-shadow-1: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 );
-  --box-shadow-2: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 );
-  --box-shadow-3: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 );
-  --box-shadow-4: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 );
-  --box-shadow-5: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 );
-
-  --black: #000;
-  --near-black: #111;
-  --dark-gray:#333;
-  --mid-gray:#555;
-  --gray: #777;
-  --silver: #999;
-  --light-silver: #aaa;
-  --moon-gray: #ccc;
-  --light-gray: #eee;
-  --near-white: #f4f4f4;
-  --white: #fff;
-
-  --transparent:transparent;
-
- --black-90: rgba(0,0,0,.9);
- --black-80: rgba(0,0,0,.8);
- --black-70: rgba(0,0,0,.7);
- --black-60: rgba(0,0,0,.6);
- --black-50: rgba(0,0,0,.5);
- --black-40: rgba(0,0,0,.4);
- --black-30: rgba(0,0,0,.3);
- --black-20: rgba(0,0,0,.2);
- --black-10: rgba(0,0,0,.1);
- --black-05: rgba(0,0,0,.05);
- --black-025: rgba(0,0,0,.025);
- --black-0125: rgba(0,0,0,.0125);
-
- --white-90: rgba(255,255,255,.9);
- --white-80: rgba(255,255,255,.8);
- --white-70: rgba(255,255,255,.7);
- --white-60: rgba(255,255,255,.6);
- --white-50: rgba(255,255,255,.5);
- --white-40: rgba(255,255,255,.4);
- --white-30: rgba(255,255,255,.3);
- --white-20: rgba(255,255,255,.2);
- --white-10: rgba(255,255,255,.1);
- --white-05: rgba(255,255,255,.05);
- --white-025: rgba(255,255,255,.025);
- --white-0125: rgba(255,255,255,.0125);
-
-  --dark-red:  #e7040f;
-  --red:  #ff4136;
-  --light-red:  #ff725c;
-  --orange:  #ff6300;
-  --gold:  #ffb700;
-  --yellow:  #ffd700;
-  --light-yellow:  #fbf1a9;
-  --purple:  #5e2ca5;
-  --light-purple:  #a463f2;
-  --dark-pink:  #d5008f;
-  --hot-pink: #ff41b4;
-  --pink:  #ff80cc;
-  --light-pink:  #ffa3d7;
-  --dark-green:  #137752;
-  --green:  #19a974;
-  --light-green:  #9eebcf;
-  --navy:  #001b44;
-  --dark-blue:  #00449e;
-  --blue:  #357edd;
-  --light-blue:  #96ccff;
-  --lightest-blue:  #cdecff;
-  --washed-blue:  #f6fffe;
-  --washed-green:  #e8fdf5;
-  --washed-yellow:  #fffceb;
-  --washed-red:  #ffdfdf;
+  --red-000: #2a1311;
+  --red-100: #4d1d1c;
+  --red-200: #732627;
+  --red-300: #9b2e32;
+  --red-400: #c5363d;
+  --red-500: #d95857;
+  --red-600: #e57c76;
+  --red-700: #f09d97;
+  --red-800: #f8beb8;
+  --red-900: #fddedb;
+  --gold-000: #271609;
+  --gold-100: #45240f;
+  --gold-200: #663212;
+  --gold-300: #894213;
+  --gold-400: #ad5112;
+  --gold-500: #d36110;
+  --gold-600: #e48043;
+  --gold-700: #f0a071;
+  --gold-800: #f9bf9f;
+  --gold-900: #ffdfce;
+  --green-000: #111c0f;
+  --green-100: #193218;
+  --green-200: #1f4920;
+  --green-300: #246227;
+  --green-400: #287b2f;
+  --green-500: #2b9637;
+  --green-600: #2db13e;
+  --green-700: #2dcd46;
+  --green-800: #2cea4e;
+  --green-900: #96fc93;
+  --teal-000: #121b1b;
+  --teal-100: #1b302f;
+  --teal-200: #234644;
+  --teal-300: #2b5e5a;
+  --teal-400: #337672;
+  --teal-500: #3a8f8a;
+  --teal-600: #41aaa3;
+  --teal-700: #48c4bd;
+  --teal-800: #54e0d8;
+  --teal-900: #b5f0eb;
+  --blue-000: #131a26;
+  --blue-100: #1c2d47;
+  --blue-200: #22416b;
+  --blue-300: #255791;
+  --blue-400: #256db9;
+  --blue-500: #4884d2;
+  --blue-600: #769bdb;
+  --blue-700: #9bb3e5;
+  --blue-800: #bdccee;
+  --blue-900: #dee5f6;
+  --indigo-000: #201237;
+  --indigo-100: #35196c;
+  --indigo-200: #491fa7;
+  --indigo-300: #5d22e6;
+  --indigo-400: #7d41f8;
+  --indigo-500: #9962fa;
+  --indigo-600: #b282fc;
+  --indigo-700: #c8a1fe;
+  --indigo-800: #dcc0ff;
+  --indigo-900: #eedfff;
+  --violet-000: #2a121d;
+  --violet-100: #4e1933;
+  --violet-200: #761c4b;
+  --violet-300: #9f1d65;
+  --violet-400: #cb187f;
+  --violet-500: #dd4a95;
+  --violet-600: #e873a9;
+  --violet-700: #f098be;
+  --violet-800: #f7bbd3;
+  --violet-900: #fcdde9;
+  --gray-000: #191a1a;
+  --gray-100: #2c2d2d;
+  --gray-200: #3f4141;
+  --gray-300: #545657;
+  --gray-400: #696c6d;
+  --gray-500: #808385;
+  --gray-600: #979b9d;
+  --gray-700: #b0b3b4;
+  --gray-800: #cacccd;
+  --gray-900: #e4e5e6;
 }
 ```
 
